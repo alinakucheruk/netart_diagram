@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NET ART</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #diagram {
+      width: 100%;
+      height: auto;
+      max-width: 600px;
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #333;
+      border-radius: 5px;
+    }
+
+    #suggestion {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Net Art happens here!</h1>
+    <img id="diagram" src="/tree1.png" alt="Net Art Diagram">
+    <p id="suggestion">Click the button below to reveal a surprising twist!</p>
+    <button id="revealButton">Reveal</button>
+  </div>
+
+  <script>
+    const revealButton = document.getElementById('revealButton');
+    const suggestion = document.getElementById('suggestion');
+    const img = document.getElementById('diagram');
+
+
+    revealButton.addEventListener('click', () => {
+      suggestion.innerHTML = "Congratulations! You've just entered the Net Art Matrix.";
+      img.src = '/tree2.gif'
+      revealButton.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
