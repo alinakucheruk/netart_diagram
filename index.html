@@ -56,7 +56,7 @@
 <body>
   <div class="container">
     <h1>Net Art happens here!</h1>
-    <img id="diagram" src="/tree1.png" alt="Net Art Diagram">
+    <img id="diagram" src="./tree1.png" alt="Net Art Diagram">
     <p id="suggestion">Click the button below to reveal a surprising twist!</p>
     <button id="revealButton">Reveal</button>
   </div>
@@ -69,7 +69,7 @@
 
     revealButton.addEventListener('click', () => {
       suggestion.innerHTML = "Congratulations! You've just entered the Net Art Matrix.";
-      img.src = '/tree2.gif'
+      img.src = './tree2.gif'
       revealButton.style.display = 'none';
     });
   </script>
